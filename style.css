@@ -12,6 +12,16 @@ html{
 
 body{
     font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+p, label, option, fieldset, select{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+legend{
+    margin-bottom: 5px;
 }
 
 main{
@@ -22,25 +32,148 @@ main{
     background-size: cover;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 10rem;
 }
 
 form{
     background-color: #031325cb;
     backdrop-filter: blur(0.2rem);
-    padding: 20px;
+    /* padding: 16px; */
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    height: 600px;
 }
-.container_divs{
 
+.conteiner_text{
+text-align: center;
+height: 50px;
+}
+
+.conteiner_text h1{
+margin-bottom: 6px;
+}
+
+.conteiner_divs{
+/* background-color: blueviolet; */
 display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+width:70%;
+height: 400px;
 }
 
-.container_div{
+.conteiner_div{
+/* background-color: blue; */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.conteiner_second_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+}
+
+.conteiner_select{
+display: flex;
+flex-direction: column;
+}
+
+fieldset{
+    display: flex;
+    border: none;
+}
+
+.conteiner_checkboxes{
+    justify-content: space-between;
+}
+
+select{
+    background-color: rgba(254, 236, 208, 0.08);
+    border: 1px solid rgba(254, 236, 208, 0.3);
+    border-radius: 6px;
+    color: white;
+    padding: 4px;
+    font-family: 'Fira Sans', sans-serif;
 
 }
 
-.container_div_1{
+option{
+    background-color: #031325cb;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+textarea{
+    background-color: rgba(254, 236, 208, 0.08);
+    border-radius: 6px;
+    border: 1px solid rgba(254, 236, 208, 0.3);
+    padding: 4px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.514);
+}
+
+input[type="file"]{
+   display: none;
+}
+
+input[type="text"]{
+    background-color: rgba(254, 236, 208, 0.08);
+    border: 1px solid rgba(254, 236, 208, 0.3);
+    padding: 4px;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container_input-file{
+    background-color: rgba(254, 236, 208, 0.08);
+    border-radius: 6px;
+    border: 1px solid rgba(254, 236, 208, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 4px;
  
+}
+
+.container_input-file:hover{
+    background-color: rgba(254, 236, 208, 0.185);
+    transition: 0.1s;
+}
+
+legend, .label{
+    color: #E9B567;
+    font-weight: bold;
+}
+
+input[type="button"]{
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+}
+
+input[type="button"]:hover{
+    background-color: white;
+}
+
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label{
+    color: #ffe2b6;
+    font-weight: bold;
+
 }

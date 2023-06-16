@@ -11,97 +11,133 @@
 <body>
     <main>
         <form>
-            <h1>Añade una nueva receta</h1>
-            <p>Agrega tu receta favorita a nuestro foro “CocinaParaTodos”</p>
-            <div class="container_divs">
-                <div class="container_div">
-                    <fieldset>
+            <div class="conteiner_text">
+                <h1>Añade una nueva receta</h1>
+                <p>Agrega tu receta favorita a nuestro foro “CocinaParaTodos”</p>
+            </div>
+            <div class="conteiner_divs">
+                <div class="conteiner_div">
+                    <fieldset class="conteiner_checkboxes">
                         <legend>Selecciona los ingredientes</legend>
                         <div>
-                            <input type="checkbox" name="egg" id="egg" value="egg">
-                            <label for="egg">Huevos</label>
-        
-                            <input type="checkbox" name="meat" id="meat" value="meat">
-                            <label for="meat">Carne</label>
-        
-                            <input type="checkbox" name="sugar" id="sugar" value="sugar">
-                            <label for="sugar">Azúcar</label>
-        
-                            <input type="checkbox" name="milk" id="milk" value="milk">
-                            <label for="milk">Leche</label>
+                            <div>
+                                <input type="checkbox" name="egg" id="egg" value="egg">
+                                <label for="egg">Huevos</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="meat" id="meat" value="meat">
+                                <label for="meat">Carne</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sugar" id="sugar" value="sugar">
+                                <label for="sugar">Azúcar</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="milk" id="milk" value="milk">
+                                <label for="milk">Leche</label>
+                            </div>
                         </div>
                         
                         <div>
-                            <input type="checkbox" name="vegetables" id="vegetables" value="vegetables">
-                            <label for="vegetables">Verduras</label>
-        
-                            <input type="checkbox" name="oil" id="oil" value="oil">
-                            <label for="oil">Aceite Vegetal</label>
-        
-                            <input type="checkbox" name="fish" id="fish" value="fish">
-                            <label for="fish">Pescados</label>
-        
-                            <input type="checkbox" name="fatFree" id="fatFree" value="fatFree">
-                            <label for="fatFree">Libre de grasa</label>
+                            <div>
+                                <input type="checkbox" name="vegetables" id="vegetables" value="vegetables">
+                                <label for="vegetables">Verduras</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="oil" id="oil" value="oil">
+                                <label for="oil">Aceite Vegetal</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="fish" id="fish" value="fish">
+                                <label for="fish">Pescados</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="fatFree" id="fatFree" value="fatFree">
+                                <label for="fatFree">Libre de grasa</label>
+                            </div>
+
                         </div>
                     </fieldset>
                     
-                    <label for="otherIgredient">Otro/s ingredientes: </label>
-                    <input type="text" name="otherIgredient" id="otherIgredient">
+                    <label for="otherIgredient" class="label">Otro/s ingredientes: </label>
+                    <input type="text" name="otherIgredient" id="otherIgredient" placeholder="Aceitunas, Cilantro..">
         
-                    <label for="instructions">Instrucciones <img src="sources/cooking.svg" alt="Icon"></label>
+                    <label for="instructions" class="label">Instrucciones <img src="sources/cooking.svg" alt="Icon"></label>
                     <textarea name="instructions" id="instructions" cols="30" rows="10" 
                     placeholder="1.Batir los huevos hasta.."></textarea>
                 </div>
     
-                <div class="container_div_1"> 
-                    <label for="typeOfrecipe">Tipo de receta</label>
-                    <select name="typeOfrecipe" id="typeOfrecipe">
-                          <option value="dessert">Postre</option>
-                          <option value="veganDessert">Postre Vegano</option>
-                          <option value="glutenFree">Libre de glutén</option>
-                          <option value="breakfast">Desayuno</option>
-                          <option value="lunch">Almuerzo</option>
-                    </select>
-                    
+                <div class="conteiner_second_div"> 
+                    <div class="conteiner_select">
+                        <label for="typeOfrecipe" class="label">Tipo de receta</label>
+                        <select name="typeOfrecipe" id="typeOfrecipe">
+                              <option value="dessert">Postre</option>
+                              <option value="veganDessert">Postre Vegano</option>
+                              <option value="glutenFree">Libre de glutén</option>
+                              <option value="breakfast">Desayuno</option>
+                              <option value="lunch">Almuerzo</option>
+                        </select>
+                    </div>
                     <fieldset>
                         <legend>Duración <img src="sources/clock.svg" alt="Icon"></legend>
-                        <div>
-                            <input type="radio" name="duration" id="more2Hour" value="more2Hour">
-                            <label for="more2Hour">Más de 2 horas</label>
-        
-                            <input type="radio" name="duration" id="2Hour" value="2Hour">
-                            <label for="2Hour">2 horas</label>
-        
-                            <input type="radio" name="duration" id="1Hour" value="1Hour">
-                            <label for="1Hour">1 hora o menos</label>
+                        <div class="prueba">
+                            <div>
+                                <input type="radio" name="duration" id="more2Hour" value="more2Hour">
+                                <label for="more2Hour">Más de 2 horas</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="duration" id="2Hour" value="2Hour">
+                                <label for="2Hour">2 horas</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="duration" id="1Hour" value="1Hour">
+                                <label for="1Hour">1 hora o menos</label>
+                            </div>
+
                         </div>
                     </fieldset>
     
                     <fieldset>
                         <legend>Herramientas Indispensables</legend>
-                        <div>
-                            <input type="checkbox" name="oven" id="oven" value="oven">
-                            <label for="oven">Horno</label>
-        
-                            <input type="checkbox" name="microwave" id="microwave" value="microwave">
-                            <label for="microwave">Microondas</label>
-        
-                            <input type="checkbox" name="mixer" id="mixer" value="mixer">
-                            <label for="mixer">Batidora</label>
-        
-                            <input type="checkbox" name="pan" id="pan" value="pan">
-                            <label for="pan">Sartén</label>
+                        <div> 
+                            <div>
+                                <input type="checkbox" name="oven" id="oven" value="oven">
+                                <label for="oven">Horno</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="microwave" id="microwave" value="microwave">
+                                <label for="microwave">Microondas</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="mixer" id="mixer" value="mixer">
+                                <label for="mixer">Batidora</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="pan" id="pan" value="pan">
+                                <label for="pan">Sartén</label>
+                            </div>
+
                         </div>
                     </fieldset>
-    
-                    <label for="imagesRecipe"> Subir fotos o videos <img src="sources/photo.svg" alt="Icon"></label>
-                    <input type="file" name="imagesRecipe" id="imagesRecipe" accept=".jpg, .png, .mp4" multiple>
-    
+
+                    <div class="container_input-file">
+                        <label for="imagesRecipe"> Subir fotos o videos</label>
+                        <img src="sources/photo.svg" alt="Icon">
+                        <input type="file" name="imagesRecipe" id="imagesRecipe" accept=".jpg, .png, .mp4" multiple>    
+                    </div>
                 </div>
             </div>
-            
-    
             <input type="button" value="Publicar receta">
         </form>
     </main>
