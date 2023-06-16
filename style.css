@@ -1,0 +1,12 @@
+.container_divs{
+background-color: brown;
+display: flex;
+}
+
+.container_div{
+background-color: blueviolet;
+}
+
+.container_div_1{
+    background-color: aquamarine;
+}
